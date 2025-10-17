@@ -138,7 +138,41 @@ SELECT * FROM ORDERS;
 
 - Ensure the **dev profile** enables H2 console and configures the in-memory datasource.
 - If you switch to **PostgreSQL** in production, set the environment variables accordingly (e.g., `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`, `SPRING_DATASOURCE_PASSWORD`).
+---
+## Evidences for Sprint 1
+Use of Spring Initializr to ensure correct configuration.
+<img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/2f75a2d2-3192-4597-9ab3-6aeb4fb9bcda" />
 
+GitHub repository creation
+<img width="1826" height="630" alt="Image" src="https://github.com/user-attachments/assets/c39e40f5-00bb-4c6c-9902-0ac705ef6f0f" />
+
+Repository cloning
+<img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/fb911bfe-f85e-4440-8458-62091d0881a0" />
+
+Order of the project (Unzipped from the Spring Initialzr)
+<img width="584" height="924" alt="Image" src="https://github.com/user-attachments/assets/ef2edd3a-92f9-424b-8c9e-31d27831277b" />
+
+Running the app
+<img width="1746" height="394" alt="Image" src="https://github.com/user-attachments/assets/54cdd240-6ddc-46a1-8fc0-31f8be5c92bf" />
+
+POST test with Postman
+
+<img width="2784" height="1820" alt="Image" src="https://github.com/user-attachments/assets/9db053bd-0506-4952-9943-8e418cd02859" />
+
+GET test with Postman
+<img width="2784" height="1820" alt="Image" src="https://github.com/user-attachments/assets/20a8d557-1986-4d8d-ac91-2a64c1a2444d" />
+
+GET by ID test with Postman
+
+<img width="2784" height="1820" alt="Image" src="https://github.com/user-attachments/assets/1c189555-87d6-4d72-b8aa-3647e40cb618" />
+
+DELETE test with Postman
+<img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/37b1875f-1e68-4670-8c45-ec75082aae68" />
+
+H2 console display
+<img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/d735bd11-302d-41cc-81b7-14d2fa19ca7d" />
+
+Display of information in H2
 ---
 
 👤 Author
