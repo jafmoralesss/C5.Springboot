@@ -162,14 +162,14 @@ POST test with Postman
 GET test with Postman
 <img width="2784" height="1820" alt="Image" src="https://github.com/user-attachments/assets/20a8d557-1986-4d8d-ac91-2a64c1a2444d" />
 
-GET by ID test with Postman
+DELETE test with Postman
 
 <img width="2784" height="1820" alt="Image" src="https://github.com/user-attachments/assets/1c189555-87d6-4d72-b8aa-3647e40cb618" />
 
-DELETE test with Postman
+H2 console display
 <img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/37b1875f-1e68-4670-8c45-ec75082aae68" />
 
-H2 console display
+H2 DB display
 <img width="3164" height="2060" alt="Image" src="https://github.com/user-attachments/assets/d735bd11-302d-41cc-81b7-14d2fa19ca7d" />
 
 Display of information in H2
