@@ -49,4 +49,12 @@ public class OrderController {
     public String getWelcomeMessage() {
         return welcomeMessage;
     }
+
+    @Value("${meli.api-key}")
+    private String apiKey;
+
+    @GetMapping("/api-key")
+    public String getApiKey() {
+        return "The current API Key is: " + apiKey;
+    }
 }

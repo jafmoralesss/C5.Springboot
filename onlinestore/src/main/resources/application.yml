@@ -10,3 +10,6 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password:
+
+meli:
+  api-key: ${MELI_API_KEY:default-api-key-123}
