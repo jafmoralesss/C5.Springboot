@@ -1,0 +1,5 @@
+server:
+  port: 8090
+
+welcome:
+  message: "==YOU ARE USING THE PRODUCTION SYSTEM=="

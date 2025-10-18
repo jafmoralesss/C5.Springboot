@@ -5,6 +5,7 @@ import com.jafet.onlinestore.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.beans.factory.annotation.Value;
 
 import java.util.List;
 
@@ -39,5 +40,13 @@ public class OrderController {
         }
         orderRepository.deleteById(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @Value("${welcome.message}")
+    private String welcomeMessage;
+
+    @GetMapping("/welcome")
+    public String getWelcomeMessage() {
+        return welcomeMessage;
     }
 }
