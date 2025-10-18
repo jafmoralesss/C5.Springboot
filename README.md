@@ -49,36 +49,30 @@ git clone <your-repository-url.git>
 ```bash
 cd online-store
 ```
+This project uses Spring Profiles to manage different configurations for development and production environments.
 
-### 3) (Optional) Make the startup script executable
-> If your project includes a `start.sh` script (macOS/Linux):
+### Running a Specific Profile
+
+You must specify which profile to run using the `spring-boot.run.profiles` property.
+
+**To run the `development` profile (port 8088):**
 ```bash
-chmod +x start.sh
-```
+./mvnw spring-boot:run -Dspring-boot.run.profiles=dev
 
-### 4) Run the application
-
-**Option A — Using the startup script**
+**To run the `production` profile (port 8090):**
 ```bash
-./start.sh
-```
-
-**Option B — Using Maven (dev profile)**
-```bash
-mvn spring-boot:run -Dspring-boot.run.profiles=dev
-```
-
-**Option C — Build JAR and run (dev profile)**
-```bash
-mvn clean package
-java -jar target/*.jar --spring.profiles.active=dev
-```
+./mvnw spring-boot:run -Dspring-boot.run.profiles=prod
 
 Once the app starts, the API will be available at:
 ```
-http://localhost:8080
+http://localhost:8088 **for dev**
+http://localhost:8090 **for prod**
 ```
+---
 
+## 🔑 Use of Environment Keys
+
+Base URL for all endpoints: `/api/orders`
 ---
 
 ## 📡 API Endpoints
@@ -96,13 +90,12 @@ Base URL for all endpoints: `/api/orders`
 
 ---
 
-## 🧪 Testing (Postman)
+## 🧪 Testing (Swagger)
 
-This repository includes (or supports) a Postman collection for easy testing.
+This repository includes (or supports) a Swagger for easy testing.
 
-1. **Import the collection:** Locate `Online Store API.postman_collection.json` in the project root (or export it from your running API via Swagger if applicable).  
-2. **Import into Postman:** Open Postman and use **Import** to load the collection.  
-3. **Run requests:** You can now use the saved requests to test all API endpoints.
+1. **Ensure the application is running. 
+2. **Open your web browser and navigate to: http://localhost:8088/swagger-ui.html (for the dev profile) or  http://localhost:8090/swagger-ui.html (for the prod profile)
 
 ---
 
