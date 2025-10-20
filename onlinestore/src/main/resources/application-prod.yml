@@ -1,5 +1,16 @@
 server:
   port: 8090
-
 welcome:
   message: "==YOU ARE USING THE PRODUCTION SYSTEM=="
+
+# PostgreSQL settings for the 'prod' profile
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/proddb 
+    username: ${DB_USER}
+    password: ${DB_PASS}
+    driver-class-name: org.postgresql.Driver # <-- ADD THIS LINE
+
+  jpa:
+    hibernate:
+      ddl-auto: update
